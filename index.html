@@ -1,0 +1,281 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            Júlio <span>Soares</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#experiences">Experiências</a>
+            <a href="#my-skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <!-- <button class="gradient-btn">Entre em contato</button> -->
+    </header>
+
+    <section class="home hidden" id="home">
+        <div class="home-content">
+            <h1>Olá, meu nome é <span>Júlio</span></h1>
+            <h3 class="text-animation">
+                Eu sou um <span></span>
+            </h3>
+            <!-- <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Metus diam ridiculus ut, primis massa euismod parturient suscipit.
+                Class scelerisque placerat per dolor magna facilisi dui cursus ultrices. Natoque sodales odio condimentum; torquent
+                tincidunt curae varius penatibus gravida? Praesent nibh orci sollicitudin ultricies laoreet. Natoque turpis erat morbi
+                senectus dictum, egestas nunc lectus. Tempus malesuada vivamus ad; purus placerat vehicula sed efficitur.
+            </p> -->
+            <div class="social-icons">
+                <a href="https://github.com/JulioSoaresA">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="http://www.linkedin.com/in/juliocsoaresa1">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+            </div>
+            <div class="btn-group">
+                <a href="" class="btn" target="_blank">Download CV</a>
+                <a href="#" class="btn">Entre em contato</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="/img/minhas_fotos/image03.png" alt="minha foto">
+        </div>
+    </section>
+
+    <section class="about hidden" id="about">
+        <div class="about-img">
+            <img src="/img/minhas_fotos/image04.png" alt="minha foto">
+        </div>
+        <div class="about-content">
+            <h2>Sobre <span>Mim</span></h2>
+            <p id="about-text">
+                Meu nome é Júlio, tenho 25 anos, moro no RN/Brasil com minha esposa, gosto bastante da cultura geek e ler livros sobre
+                ficção científica, sou apaixonado por tecnologia, então por isso decidi entrar na facundade desse ramo, sou formado em
+                ciências e tecnologia e estudande de engenharia de computação e lá eu descobri minha paixão pelo desenvolvimento de
+                software, sou engenheiro de software com quase 2 anos de experiência no mercado de tecnologia, sou especializado em
+                backend utilizando Python e Django, mas atualmente estou expandindo meus conhecimentos em tecnologias frontend também.
+                Tive experiências muito relevantes no laboratório de inovação tecnológica em saúde (LAIS) em projetos que possuem um
+                grande volume de dados sensíveis diários, onde desenvolvi habilidades muito importantes para um desenvolvedor, como
+                comunicação assertiva e direta com membros da equipe, trabalho em equipe, gerenciamento de tempo, organização e
+                resolução de problemas. Nesses projetos, tive experiências em criar modelos complexos de bancos de dados relacionais
+                como o PostgreSQL e MySQL. Também implementei a geração de relatórios por meio de consultas no banco de dados e
+                exportando em planilhas do Excel de maneira assíncrona utilizando o Celery.
+            </p>
+            <a href="#" class="btn" id="read-more-btn">Leia Mais</a>
+        </div>
+    </section>
+
+    <section class="experiences hidden" id="experiences">
+        <h2 class="heading">Experiências</h2>
+        <div class="experiences-box">
+            <div class="experience-card hidden">
+                <div class="experience-img">
+                    <img src="/img/experiencias/eject.jpeg" alt="EJECT">
+                </div>
+                <div class="experience-text">
+                    <h4>01/05/2024 - <span>Atual</span></h4>
+                    <h3>Desenvolvedor Backend - <span>EJECT</span></h3>
+                    <p>
+                        <span>Stack:</span> Python, Django, MySQL, Scrum
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-card hidden">
+                <div class="experience-img">
+                    <img src="/img/experiencias/lais.webp" alt="LAIS">
+                </div>
+                <div class="experience-text">
+                    <h4>01/09/2022 - <span>01/09/2024</span></h4>
+                    <h3>Engenhairo Backend Júnior - <span>LAIS</span></h3>
+                    <p>
+                        <span>Stack:</span> Python, Django, PostgreSQL, Redis, CI/CD, Scrum
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-skills hidden" id="my-skills">
+        <h2 class="heading">Minhas habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                    <i class='bx bxl-python'></i>
+                    <h4>Python</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                    <i class='bx bxl-django'></i>
+                    <h4>Django</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                    <i class='bx bxl-postgresql'></i>
+                    <h4>PostgreSQL</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                    <i class='bx bxl-mongodb'></i>
+                    <h4>MongoDB</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                    <i class='bx bxl-html5'></i>
+                    <h4>HTML</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                <i class='bx bxl-css3'></i>
+                    <h4>CSS</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                <i class='bx bxl-javascript'></i>
+                    <h4>Javascript</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                <i class='bx bxl-bootstrap'></i>
+                    <h4>Bootstrap</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                <i class='bx bx-analyse'></i>
+                    <h4>CI/CD</h4>
+                </div>
+            </div>
+
+            <div class="skill-box hidden">
+                <div class="skill-info">
+                <i class='bx bx-loader-circle'></i>
+                    <h4>Agile Frameworks (Scrum)</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects hidden" id="projects">
+        <h2 class="heading">Projetos</h2>
+        <div class="projects-box">
+            <div class="project-card">
+                <img src="/img/projetos/greengardens.jpeg" alt="GreenGardens">
+                <h3>Green Gardens</h3>
+                <p>
+                    A GreenGardens é uma empresa inovadora que se dedica à sustentabilidade e ao bem-estar através de jardins e espaços
+                    verdes.
+                </p>
+                <div class="stack-icons">
+                    <a href="#">
+                        <i class='bx bxl-python'></i>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bxl-django'></i>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bxl-html5'></i>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bxl-css3'></i>
+                    </a>
+
+                    <a href="#">
+                        <i class='bx bxl-javascript'></i>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <a href="https://github.com/JulioSoaresA/GreenGardens-Back" class="btn">Github</a>
+                    <a href="juliosoares.pythonanywhere.com/" class="btn">Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <selection class="contact hidden" id="contact">
+        <h2 class="heading">Entre Em <span>Contato</span></h2>
+        <!-- {% if messages %}
+        <div class="container mt-3">
+            {% for message in messages %}
+            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% else %}alert-info{% endif %} alert-dismissible fade show"
+                role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %} -->
+
+        <form action="#contact" method="">
+            <div class="custom-input-group">
+                <div class="custom-input-box">
+                    <input type="text" placeholder="Nome Completo" name="nome">
+                    <input type="email" placeholder="Email" name="email">
+                </div>
+                <div class="custom-input-box">
+                    <input class="telefone-mask" type="text" placeholder="(xx) xxxxx-xxxx" name="telefone">
+                    <input type="text" placeholder="Assunto" name="assunto">
+                </div>
+            </div>
+            <div class="custominput-group-2">
+                <textarea name="mensagem" id="" placeholder="Escreva uma mensagem :D" cols="25" rows="10"></textarea>
+                <input type="submit" value="Enviar Mensagem" class="btn">
+            </div>
+        </form>
+    </selection>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+        </div>
+        <p class="copyright">
+        <p class="copyright">
+            © 2024 Júlio Soares. Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+</body>
+</html>
