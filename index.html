@@ -49,8 +49,8 @@
                 </a>
             </div>
             <div class="btn-group">
-                <a href="" class="btn" target="_blank">Download CV</a>
-                <a href="#" class="btn">Entre em contato</a>
+                <a href="/arquivos/CV - ptbr.pdf" class="btn" target="_blank">Download CV</a>
+                <a href="#contact" class="btn">Entre em contato</a>
             </div>
         </div>
         <div class="home-img">
@@ -227,34 +227,20 @@
     </section>
     <selection class="contact hidden" id="contact">
         <h2 class="heading">Entre Em <span>Contato</span></h2>
-        <!-- {% if messages %}
-        <div class="container mt-3">
-            {% for message in messages %}
-            <div class="alert {% if message.tags %}alert-{{ message.tags }}{% else %}alert-info{% endif %} alert-dismissible fade show"
-                role="alert">
-                {{ message }}
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            {% endfor %}
-        </div>
-        {% endif %} -->
-
-        <form action="#contact" method="">
+        <form id="contactForm" action="https://formsubmit.co/ajax/f4b0a8d4452fffa7dd6e9d581b480d64" method="POST" data-form>
             <div class="custom-input-group">
                 <div class="custom-input-box">
-                    <input type="text" placeholder="Nome Completo" name="nome">
-                    <input type="email" placeholder="Email" name="email">
+                    <input type="text" placeholder="Nome Completo" name="nome" required>
+                    <input type="email" placeholder="Email" name="email" required>
                 </div>
                 <div class="custom-input-box">
-                    <input class="telefone-mask" type="text" placeholder="(xx) xxxxx-xxxx" name="telefone">
-                    <input type="text" placeholder="Assunto" name="assunto">
+                    <input class="telefone-mask" type="text" placeholder="(xx) xxxxx-xxxx" name="telefone" required>
+                    <input type="text" placeholder="Assunto" name="assunto" required>
                 </div>
             </div>
             <div class="custominput-group-2">
-                <textarea name="mensagem" id="" placeholder="Escreva uma mensagem :D" cols="25" rows="10"></textarea>
-                <input type="submit" value="Enviar Mensagem" class="btn">
+                <textarea name="mensagem" placeholder="Escreva uma mensagem :D" cols="25" rows="10" required></textarea>
+                <button type="submit" class="btn" data-button>Enviar</button>
             </div>
         </form>
     </selection>
@@ -274,8 +260,10 @@
     </footer>
     <script src="/js/script.js"></script>
     <script src="/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/js/jquery.mask.min.js"></script>
+    
 </body>
 </html>

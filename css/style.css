@@ -486,6 +486,65 @@ section {
     margin: 1.5rem 0;
     resize: none;
 }
+.custominput-group-2 button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    max-width: 300px;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.5s ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toast.visible {
+    opacity: 1;
+    top: 40px;
+}
+
+/* Cor do toast de sucesso */
+.toast.success {
+    background-color: var(--main-color); /* Usa a cor principal como background */
+}
+
+/* Aplica a cor branca ao texto dentro do span */
+.toast.success span {
+    color: white !important;
+}
+
+.toast.error {
+    background-color: #555b69;
+}
+
+/* Aplica a cor branca ao texto dentro do span */
+.toast.error span {
+    color: white !important;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: white !important; /* Força a cor do botão de fechar para branco */
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.toast-close:hover {
+    color: lightgray;
+}
 
 .footer {
     background-color: var(--second-bg-color);
@@ -566,5 +625,34 @@ section {
     }
     .contact form {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .experiences-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-card {
+        width: 90%; /* Largura quase completa para pequenos dispositivos */
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-card {
+        padding: 1rem;
+    }
+
+    .experience-card h4 {
+        font-size: 1rem;
+    }
+
+    .experience-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .experience-card p {
+        font-size: 0.9rem;
     }
 }
