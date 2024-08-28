@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     var fullText = document.getElementById("about-text").innerHTML;
-    var truncatedText = fullText.substring(0, 200) + "...";
+    var truncatedText = fullText.substring(0, 335) + "...";
     var isTruncated = true;
     var btn = document.getElementById("read-more-btn");
     var paragraph = document.getElementById("about-text");

@@ -258,6 +258,14 @@ section {
 .about-content .btn {
     margin: 3rem 0;
 }
+.about-content ul li::marker {
+    color: var(--main-color);
+}
+.about-content li {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
 
 
 ::-webkit-scrollbar {
